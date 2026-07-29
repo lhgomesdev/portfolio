@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&amp;display=swap');
+        .logo-text {
+        font-family: 'Fira Code', monospace;
+        font-weight: 700;
+        font-size: 60px;
+        letter-spacing: -6px;
+        }
+    </style>
+</defs>
+
+<rect width="100" height="100" rx="10" fill="#000000"/>
+
+<text x="48" y="70" text-anchor="middle" class="logo-text">
+    <tspan fill="#f3f4f6">LHG</tspan>
+</text>
+</svg>
