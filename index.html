@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luiz Henrique Gomes | Software Developer</title>
+<meta name="description" content="Portfólio de Luiz Henrique Gomes, Junior Software Developer especializado em agentes de IA e automação em Python e GCP.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="accent">&lt;</span>LHG<span class="accent">/&gt;</span></a>
+
+    <div class="nav-links">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#stack" data-i18n="navStack">Tech Stack</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <button id="langToggle" class="lang-btn">PT-BR</button>
+    </div>
+
+    <div class="nav-mobile-controls">
+      <button id="langToggleMobile" class="lang-btn">PT</button>
+      <button id="mobileMenuBtn" class="icon-btn" aria-label="Menu">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu hidden">
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#stack" data-i18n="navStack">Tech Stack</a>
+    <a href="#projects" data-i18n="navProjects">Projects</a>
+  </div>
+</nav>
+
+<main id="top">
+
+  <section id="hero" class="hero">
+    <h1>
+      <span data-i18n="heroGreeting">Hi there, I'm</span><br>
+      <span class="accent">Luiz Henrique Gomes</span> 👋
+    </h1>
+    <h2 class="hero-role" data-i18n="heroRole">Junior Software Developer | Applied AI &amp; Automation | Cloud Computing</h2>
+    <p class="hero-bio" data-i18n="heroBio">I am a Computer Science student and a Junior Software Developer passionate about building intelligent solutions. My current focus lies in designing and deploying AI Agents, streamlining workflows, and leveraging Cloud environments to solve real-world business challenges.</p>
+
+    <div class="hero-actions">
+      <a href="https://www.linkedin.com/in/lhgomes/" target="_blank" rel="noopener" class="btn btn-primary">
+        <i class="ph-fill ph-linkedin-logo"></i> LinkedIn
+      </a>
+      <a href="https://github.com/lhgomesdev" target="_blank" rel="noopener" class="btn btn-secondary">
+        <i class="ph-fill ph-github-logo"></i> GitHub
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-label">// about</span>
+      <h2 data-i18n="aboutTitle">About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n="aboutP1">Constantly exploring Prompt Engineering, Software Architecture, and Generative AI to aggregate value, scale solutions, and innovate within the AI and Cloud ecosystems.</p>
+
+        <ul class="about-list">
+          <li>
+            <i class="ph-fill ph-graduation-cap"></i>
+            <div>
+              <strong data-i18n="aboutEduTitle">B.S. in Computer Science</strong>
+              <span data-i18n="aboutEduDesc">Anhembi Morumbi University (Expected Nov 2027)</span>
+            </div>
+          </li>
+          <li>
+            <i class="ph-fill ph-briefcase"></i>
+            <div>
+              <strong data-i18n="aboutWorkTitle">Junior Software Developer</strong>
+              <span data-i18n="aboutWorkDesc">Currently working @ Gentrop</span>
+            </div>
+          </li>
+          <li>
+            <i class="ph-fill ph-robot"></i>
+            <div>
+              <strong data-i18n="aboutSpecTitle">Specialized in Applied AI</strong>
+              <span data-i18n="aboutSpecDesc">Developing and automating AI Agents using Python and GCP.</span>
+            </div>
+          </li>
+          <li>
+            <i class="ph-fill ph-target"></i>
+            <div>
+              <strong data-i18n="aboutGoalTitle">Goal</strong>
+              <span data-i18n="aboutGoalDesc">To continuously aggregate value and innovate within the AI ecosystem.</span>
+            </div>
+          </li>
+          <li>
+            <i class="ph-fill ph-chalkboard-teacher"></i>
+            <div>
+              <strong data-i18n="aboutTeachTitle">Development &amp; English Teacher</strong>
+              <span data-i18n="aboutTeachDesc">CNA+ (02/2024–04/2025), leading 15+ classes in programming logic, game dev and English</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="terminal-card">
+        <i class="ph-fill ph-terminal-window"></i>
+        <p class="terminal-comment">// currently tinkering with</p>
+        <div class="terminal-tags">
+          <span>Python</span>
+          <span>Google Cloud</span>
+          <span>Vertex AI</span>
+          <span>Gemini Enterprise</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack" class="section">
+    <div class="section-header">
+      <span class="section-label">// stack</span>
+      <h2 data-i18n="stackTitle">Tech Stack &amp; Tools</h2>
+    </div>
+
+    <div class="stack-grid">
+      <div class="stack-card">
+        <h3><i class="ph-fill ph-code"></i> <span data-i18n="stackLang">Languages</span></h3>
+        <div class="tag-row">
+          <span>Python</span><span>Rust</span><span>JavaScript</span><span>Java</span><span>C++</span><span>SQL</span><span>HTML5</span><span>CSS3</span>
+        </div>
+      </div>
+
+      <div class="stack-card">
+        <h3><i class="ph-fill ph-cloud"></i> <span data-i18n="stackCloud">AI &amp; Cloud</span></h3>
+        <div class="tag-row">
+          <span>Google Cloud (GCP)</span><span>Vertex AI</span><span>Generative AI</span><span>Prompt Eng.</span><span>Google ADK</span>
+        </div>
+      </div>
+
+      <div class="stack-card">
+        <h3><i class="ph-fill ph-wrench"></i> <span data-i18n="stackTools">Tools &amp; VC</span></h3>
+        <div class="tag-row">
+          <span>Git</span><span>GitHub</span><span>Google Workspace</span>
+        </div>
+      </div>
+
+      <div class="stack-card">
+        <h3><i class="ph-fill ph-translate"></i> <span data-i18n="stackLangs">Languages</span></h3>
+        <div class="tag-row">
+          <span data-i18n="langPt">Portuguese (Native)</span>
+          <span data-i18n="langEn">English (C1)</span>
+          <span data-i18n="langEs">Spanish (A2)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-label">// projects</span>
+      <h2 data-i18n="projectsTitle">Featured Projects</h2>
+    </div>
+    <p class="projects-desc" data-i18n="projectsDesc">While my current professional focus is on AI and Cloud ecosystems, I enjoy building interactive web applications, games, and utility tools that challenge my logic and UI/UX skills.</p>
+
+    <div class="project-grid">
+      <div class="project-card" data-project-url="https://pitagoras.lhgomes.dev.br" tabindex="0" role="link" aria-label="Abrir projeto PitagorasVirtual">
+        <div class="project-top">
+          <i class="ph ph-dice-five"></i>
+          <a href="https://github.com/lhgomesdev/pitagorasVirtual" target="_blank" rel="noopener" aria-label="Ver repositório no GitHub">
+            <i class="ph ph-github-logo"></i>
+          </a>
+        </div>
+        <h3>PitagorasVirtual</h3>
+        <p data-i18n="proj1Desc">A digital adaptation of the "Pitágoras" board game. This mathematical party game features both Singleplayer and Local Multiplayer modes, focusing on engaging gameplay and dynamic interactions.</p>
+        <div class="tag-row tag-row--mono">
+          <span>Vanilla JS</span><span>HTML5</span><span>Tailwind CSS</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-project-url="https://cassino.lhgomes.dev.br" tabindex="0" role="link" aria-label="Abrir projeto DiamondCasinoCalc">
+        <div class="project-top">
+          <i class="ph ph-diamond"></i>
+          <a href="https://github.com/lhgomesdev/DiamondCasinoCalc" target="_blank" rel="noopener" aria-label="Ver repositório no GitHub">
+            <i class="ph ph-github-logo"></i>
+          </a>
+        </div>
+        <h3>DiamondCasinoCalc</h3>
+        <p data-i18n="proj2Desc">A utility calculator designed to optimize planning for the Diamond Casino Heist in Grand Theft Auto Online (GTAO). It demonstrates practical DOM manipulation and logic to help players calculate and maximize their in-game outcomes.</p>
+        <div class="tag-row tag-row--mono">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="footer-quote" data-i18n="footerQuote">"Building scalable solutions to solve real-world problems."</p>
+  <div class="footer-links">
+    <a href="https://github.com/lhgomesdev" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+    <a href="https://www.linkedin.com/in/lhgomes/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+  </div>
+  <p class="footer-credit">Designed &amp; built by Luiz Henrique Gomes.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
