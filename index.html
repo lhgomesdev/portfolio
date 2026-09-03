@@ -8,7 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/@phosphor-icons/web"></script>
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -46,10 +46,10 @@
   <section id="hero" class="hero">
     <h1>
       <span data-i18n="heroGreeting">Hi there, I'm</span><br>
-      <span class="accent">Luiz Henrique Gomes</span> 👋
+      <span class="accent underline-draw">Luiz Henrique Gomes</span>
     </h1>
-    <h2 class="hero-role" data-i18n="heroRole">Junior Software Developer | Applied AI &amp; Automation | Cloud Computing</h2>
-    <p class="hero-bio" data-i18n="heroBio">I am a Computer Science student and a Junior Software Developer passionate about building intelligent solutions. My current focus lies in designing and deploying AI Agents, streamlining workflows, and leveraging Cloud environments to solve real-world business challenges.</p>
+    <h2 class="hero-role" data-i18n="heroRole">Junior Software Developer | Applied AI &amp; Automation</h2>
+    <p class="hero-bio" data-i18n="heroBio">I'm a junior software developer focused on applied AI and automation. I build AI agents and automate workflows with Python and GCP, and I like keeping things simpler than I found them.</p>
 
     <div class="hero-actions">
       <a href="https://www.linkedin.com/in/lhgomes/" target="_blank" rel="noopener" class="btn btn-primary">
@@ -63,13 +63,13 @@
 
   <section id="about" class="section">
     <div class="section-header">
-      <span class="section-label">// about</span>
+      <span class="section-label" aria-hidden="true">01</span>
       <h2 data-i18n="aboutTitle">About Me</h2>
     </div>
 
     <div class="about-grid">
       <div class="about-text">
-        <p data-i18n="aboutP1">Constantly exploring Prompt Engineering, Software Architecture, and Generative AI to aggregate value, scale solutions, and innovate within the AI and Cloud ecosystems.</p>
+        <p data-i18n="aboutP1">I like understanding why an agent responds the way it does, trying different architectures, and writing down what I learn along the way.</p>
 
         <ul class="about-list">
           <li>
@@ -90,14 +90,7 @@
             <i class="ph-fill ph-robot"></i>
             <div>
               <strong data-i18n="aboutSpecTitle">Specialized in Applied AI</strong>
-              <span data-i18n="aboutSpecDesc">Developing and automating AI Agents using Python and GCP.</span>
-            </div>
-          </li>
-          <li>
-            <i class="ph-fill ph-target"></i>
-            <div>
-              <strong data-i18n="aboutGoalTitle">Goal</strong>
-              <span data-i18n="aboutGoalDesc">To continuously aggregate value and innovate within the AI ecosystem.</span>
+              <span data-i18n="aboutSpecDesc">Building and automating AI agents with Python and GCP.</span>
             </div>
           </li>
           <li>
@@ -110,14 +103,18 @@
         </ul>
       </div>
 
-      <div class="terminal-card">
-        <i class="ph-fill ph-terminal-window"></i>
-        <p class="terminal-comment">// currently tinkering with</p>
+      <div class="note-card">
+        <i class="ph-fill ph-note-pencil"></i>
+        <p class="note-comment" data-i18n="noteLabel">on my desk right now</p>
         <div class="terminal-tags">
           <span>Python</span>
           <span>Google Cloud</span>
           <span>Vertex AI</span>
           <span>Gemini Enterprise</span>
+        </div>
+        <p class="note-comment note-comment--second" data-i18n="noteLabel2">off the clock</p>
+        <div class="terminal-tags">
+          <span data-i18n="noteGameDex">Pokémon Shield (dex grind &amp; shiny hunting)</span>
         </div>
       </div>
     </div>
@@ -125,33 +122,33 @@
 
   <section id="stack" class="section">
     <div class="section-header">
-      <span class="section-label">// stack</span>
+      <span class="section-label" aria-hidden="true">02</span>
       <h2 data-i18n="stackTitle">Tech Stack &amp; Tools</h2>
     </div>
 
-    <div class="stack-grid">
-      <div class="stack-card">
+    <div class="stack-groups">
+      <div class="stack-group">
         <h3><i class="ph-fill ph-code"></i> <span data-i18n="stackLang">Languages</span></h3>
         <div class="tag-row">
           <span>Python</span><span>Rust</span><span>JavaScript</span><span>Java</span><span>C++</span><span>SQL</span><span>HTML5</span><span>CSS3</span>
         </div>
       </div>
 
-      <div class="stack-card">
+      <div class="stack-group">
         <h3><i class="ph-fill ph-cloud"></i> <span data-i18n="stackCloud">AI &amp; Cloud</span></h3>
         <div class="tag-row">
           <span>Google Cloud (GCP)</span><span>Vertex AI</span><span>Generative AI</span><span>Prompt Eng.</span><span>Google ADK</span>
         </div>
       </div>
 
-      <div class="stack-card">
+      <div class="stack-group">
         <h3><i class="ph-fill ph-wrench"></i> <span data-i18n="stackTools">Tools &amp; VC</span></h3>
         <div class="tag-row">
           <span>Git</span><span>GitHub</span><span>Google Workspace</span>
         </div>
       </div>
 
-      <div class="stack-card">
+      <div class="stack-group">
         <h3><i class="ph-fill ph-translate"></i> <span data-i18n="stackLangs">Languages</span></h3>
         <div class="tag-row">
           <span data-i18n="langPt">Portuguese (Native)</span>
@@ -164,12 +161,40 @@
 
   <section id="projects" class="section">
     <div class="section-header">
-      <span class="section-label">// projects</span>
-      <h2 data-i18n="projectsTitle">Featured Projects</h2>
+      <span class="section-label" aria-hidden="true">03</span>
+      <h2 data-i18n="projectsTitle">Some Things I've Built</h2>
     </div>
-    <p class="projects-desc" data-i18n="projectsDesc">While my current professional focus is on AI and Cloud ecosystems, I enjoy building interactive web applications, games, and utility tools that challenge my logic and UI/UX skills.</p>
+    <p class="projects-desc" data-i18n="projectsDesc">A mix of things I use myself, things I built to practice, and things I built because they sounded fun.</p>
 
     <div class="project-grid">
+      <div class="project-card">
+        <div class="project-top">
+          <i class="ph ph-wallet"></i>
+          <a href="https://github.com/lhgomesdev/lhg-finance" target="_blank" rel="noopener" aria-label="Ver repositório no GitHub">
+            <i class="ph ph-github-logo"></i>
+          </a>
+        </div>
+        <h3>lhg-finance</h3>
+        <p data-i18n="proj3Desc">A personal finance tracker with support for multiple users. Built with Django, and I use it myself to keep track of my own spending.</p>
+        <div class="tag-row tag-row--mono">
+          <span>Django</span><span>SQLite</span><span>Chart.js</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <i class="ph ph-sword"></i>
+          <a href="https://github.com/lhgomesdev/daggerheart-discord-bot" target="_blank" rel="noopener" aria-label="Ver repositório no GitHub">
+            <i class="ph ph-github-logo"></i>
+          </a>
+        </div>
+        <h3>daggerheart-discord-bot</h3>
+        <p data-i18n="proj4Desc">A Discord bot for tabletop RPG sessions of Daggerheart: dice rolls, encounter management with autocomplete, character sheets, and a persistent Fear tracker.</p>
+        <div class="tag-row tag-row--mono">
+          <span>Node.js</span><span>discord.js</span>
+        </div>
+      </div>
+
       <div class="project-card" data-project-url="https://pitagoras.lhgomes.dev.br" tabindex="0" role="link" aria-label="Abrir projeto PitagorasVirtual">
         <div class="project-top">
           <i class="ph ph-dice-five"></i>
@@ -203,11 +228,24 @@
 </main>
 
 <footer class="footer">
-  <p class="footer-quote" data-i18n="footerQuote">"Building scalable solutions to solve real-world problems."</p>
   <div class="footer-links">
     <a href="https://github.com/lhgomesdev" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
     <a href="https://www.linkedin.com/in/lhgomes/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
   </div>
+
+  <div class="pokemon-row">
+    <span class="pokemon-caption" data-i18n="pokemonCaption">a few personal favorites</span>
+    <div class="pokemon-sprites">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png" alt="Swampert" loading="lazy" style="animation-delay:0s">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png" alt="Garchomp" loading="lazy" style="animation-delay:.15s">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png" alt="Tapu Koko" loading="lazy" style="animation-delay:.3s">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png" alt="Litten" loading="lazy" style="animation-delay:.45s">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png" alt="Koraidon" loading="lazy" style="animation-delay:.6s">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/651.png" alt="Quilladin" loading="lazy" style="animation-delay:.75s">
+    </div>
+    <p class="pokemon-copyright" data-i18n="pokemonCopyright">Pokémon sprites © Nintendo / Game Freak / The Pokémon Company. Fan reference only, no affiliation.</p>
+  </div>
+
   <p class="footer-credit">Designed &amp; built by Luiz Henrique Gomes.</p>
 </footer>
 
