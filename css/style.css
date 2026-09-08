@@ -137,23 +137,31 @@ main{ max-width:var(--maxw); margin:0 auto; padding:0 20px; }
   font-size:.85rem; font-weight:500; color:var(--text);
   background:var(--surface); border:1px solid var(--border); border-radius:4px; padding:6px 10px;
 }
-.tag-row--mono span{ font-family:var(--font-mono); font-size:.75rem; color:var(--muted); background:none; border:none; padding:0; }
+.tag-row--mono span{ font-family:var(--font-mono); font-size:.75rem; color:var(--muted); background:none; border:none; padding:0; transition:color .15s; }
 
 .projects-desc{ color:var(--muted); font-size:1.05rem; max-width:60ch; margin:-24px 0 40px; text-wrap:pretty; }
 .project-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:24px; }
 .project-card{
-  background:var(--surface); border:1px solid var(--border); border-radius:8px;
+  background:var(--surface); border:1px solid var(--project-accent, var(--border)); border-radius:8px;
   padding:28px; display:flex; flex-direction:column; gap:14px;
-  transition:border-color .15s;
+  transition:border-color .15s, background-color .15s, color .15s;
 }
-.project-card:hover{ border-color:var(--accent); }
+.project-card:hover{
+  border-color:var(--project-accent, var(--accent));
+  background:var(--project-bg, var(--surface));
+  color:var(--project-text, inherit);
+}
 .project-card[data-project-url]{ cursor:pointer; }
 .project-top{ display:flex; justify-content:space-between; align-items:center; }
-.project-top > i:first-child{ font-size:1.9rem; color:var(--accent); }
+.project-top > i:first-child{ font-size:1.9rem; color:var(--project-accent, var(--accent)); transition:color .15s; }
+.project-card:hover .project-top > i:first-child{ color:var(--project-text, var(--accent)); }
 .project-top a{ color:var(--muted); font-size:1.3rem; transition:color .15s; }
-.project-top a:hover{ color:var(--accent); }
+.project-card:hover .project-top a{ color:var(--project-text, var(--muted)); }
+.project-top a:hover{ color:var(--project-accent, var(--accent)); }
 .project-card h3{ font-family:var(--font-serif); font-weight:600; font-size:1.35rem; margin:0; }
-.project-card p{ color:var(--muted); margin:0; flex-grow:1; }
+.project-card p{ color:var(--muted); margin:0; flex-grow:1; transition:color .15s; }
+.project-card:hover p{ color:var(--project-text, var(--muted)); }
+.project-card:hover .tag-row--mono span{ color:var(--project-text, var(--muted)); }
 
 .footer{
   max-width:var(--maxw); margin:40px auto 0; padding:48px 20px;

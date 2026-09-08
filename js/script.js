@@ -61,6 +61,7 @@ const translations = {
     proj4Desc: "A Discord bot for tabletop RPG sessions of Daggerheart: dice rolls, encounter management with autocomplete, character sheets, and a persistent Fear tracker.",
     proj1Desc: "A digital adaptation of the \"Pitágoras\" board game. This mathematical party game features both Singleplayer and Local Multiplayer modes, focusing on engaging gameplay and dynamic interactions.",
     proj2Desc: "A utility calculator designed to optimize planning for the Diamond Casino Heist in Grand Theft Auto Online (GTAO). It demonstrates practical DOM manipulation and logic to help players calculate and maximize their in-game outcomes.",
+    proj5Desc: "A didactic mini-compiler built with 7 classmates for college: it translates a Portuguese, natural-language-like script into Java through the classic lexical, syntax, semantic, and code generation phases.",
     pokemonCaption: "a few personal favorites",
     pokemonCopyright: "Pokémon sprites © Nintendo / Game Freak / The Pokémon Company. Fan reference only, no affiliation."
   },
@@ -98,6 +99,7 @@ const translations = {
     proj4Desc: "Um bot de Discord pra mesas de RPG de Daggerheart: rolagem de dados, gerenciamento de encontros com autocompletar, fichas de personagem e um rastreador de Medo persistente.",
     proj1Desc: "Uma adaptação digital do jogo de tabuleiro 'Pitágoras'. Este jogo matemático de grupo possui modos Singleplayer e Multiplayer Local, focando em jogabilidade envolvente e interações dinâmicas.",
     proj2Desc: "Uma calculadora utilitária projetada para otimizar o planejamento do Golpe ao Cassino Diamond em Grand Theft Auto Online (GTAO). Demonstra manipulação prática do DOM e lógica para ajudar jogadores a calcular e maximizar seus resultados no jogo.",
+    proj5Desc: "Um mini-compilador didático feito com mais 7 colegas da faculdade: traduz um script em português, parecido com linguagem natural, para Java, passando pelas fases clássicas de análise léxica, sintática, semântica e geração de código.",
     pokemonCaption: "alguns dos meus favoritos",
     pokemonCopyright: "Sprites de Pokémon © Nintendo / Game Freak / The Pokémon Company. Só referência de fã, sem afiliação."
   }
